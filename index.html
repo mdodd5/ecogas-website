@@ -289,7 +289,25 @@
     .chip.hl { border-color: var(--lithium); }
 
     /* Mission band */
-    .mission { padding: 0 0 110px; }
+    .mission { padding: 110px 0; }
+
+    /* Market */
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 52px; }
+    @media (max-width: 860px) { .stats { grid-template-columns: 1fr; } }
+    .stat { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 30px; }
+    .stat .num { font-family: var(--display); font-weight: 600; font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: -0.03em; margin-bottom: 14px; }
+    .stat p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .market-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 20px; margin-top: 20px; }
+    @media (max-width: 860px) { .market-grid { grid-template-columns: 1fr; } }
+    blockquote.pull {
+      margin: 0; border: 1px solid var(--line); border-left: 3px solid var(--sulphur); border-radius: var(--radius);
+      background: linear-gradient(160deg, var(--surface), var(--bg-2)); padding: 32px;
+    }
+    blockquote.pull p { font-family: var(--display); font-size: clamp(21px, 2.4vw, 26px); line-height: 1.3; margin: 0 0 16px; font-weight: 500; }
+    blockquote.pull cite { font-style: normal; font-family: var(--mono); font-size: 12px; color: var(--faint); letter-spacing: .04em; }
+    .fit { border: 1px solid rgba(94,234,212,.45); border-radius: var(--radius); padding: 32px; background: linear-gradient(170deg, rgba(94,234,212,.09), var(--surface) 60%); }
+    .fit h3 { font-size: 22px; margin: 0 0 10px; font-weight: 600; }
+    .fit p { color: var(--muted); margin: 0; font-size: 16px; }
     .mission-inner {
       position: relative; overflow: hidden; border-radius: 22px;
       border: 1px solid var(--line);
@@ -372,6 +390,7 @@
         <li><a href="#solvay">vs Solvay</a></li>
         <li><a href="#sources">Feedstocks</a></li>
         <li><a href="#products">Products</a></li>
+        <li><a href="#market">Market</a></li>
       </ul>
       <a class="btn btn-primary btn-sm" href="#contact">Partner with us</a>
     </div>
@@ -610,6 +629,33 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- MARKET -->
+    <section id="market" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Market insight</p>
+        <h2 class="reveal d1">Soda ash: the hidden backbone of the energy transition.</h2>
+        <p class="lead reveal d2">Solar glass is one of the most soda-ash-intensive industrial processes, and the solar boom is changing the soda ash market.</p>
+
+        <div class="stats">
+          <div class="stat reveal"><div class="num g">#1</div><p>Solar glass is now the single largest driver of new soda ash demand.</p></div>
+          <div class="stat reveal d1"><div class="num y">3.2 Mt</div><p>Soda ash embedded each year in China's exports of solar glass and panels.</p></div>
+          <div class="stat reveal d2"><div class="num e">2.6%</div><p>Annual growth in global soda ash use, 2020 to 2025, driven largely by solar glass.</p></div>
+        </div>
+
+        <div class="market-grid">
+          <blockquote class="pull reveal">
+            <p>&ldquo;Western economies seeking to onshore solar manufacturing will face challenges in securing sustainable, diversified soda ash supply.&rdquo;</p>
+            <cite>OPIS Insights, &ldquo;Soda Ash and Solar Glass: The Hidden Backbone of the Energy Transition&rdquo;, 17 October 2025</cite>
+          </blockquote>
+          <div class="fit reveal d1">
+            <h3>Where Ecogas fits</h3>
+            <p>China dominates soda ash and solar glass supply, and new capacity elsewhere is lagging. Ecogas offers a new, lower-energy source of soda ash made from waste, helping secure supply for solar glass outside China.</p>
+          </div>
+        </div>
+        <p class="footnote">Figures and quote: OPIS Insights, &ldquo;Soda Ash and Solar Glass: The Hidden Backbone of the Energy Transition&rdquo;, 17 October 2025.</p>
       </div>
     </section>
 
