@@ -5,4 +5,4 @@
 - `ecogas-app-icon`: symbol on a dark rounded tile, for social profiles and app icons
 - `apple-touch-icon.png`: phone home-screen icon used by the website
 - `ecogas-email-icon.png` / `ecogas-email-logo.png`: small images sized for email signatures
-- `email-signature.html`: signature builder; open https://www.ecogas.com.au/brand/email-signature.html
+- Email signature builder: stored on the `email-signature` branch (not published on the website)
